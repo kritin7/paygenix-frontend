@@ -14,21 +14,21 @@ const LOSSuite = () => {
   const activeData = losFeatures.find(f => f.id === activeFeature);
 
   return (
-    <section id="los-suite" className="py-24 bg-white">
+    <section id="los-suite" className="py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 lg:mb-16">
           <span className="inline-block px-4 py-2 bg-slate-900 text-white rounded-full text-sm font-semibold mb-4">
             LOS Suite
           </span>
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-900 mb-4 lg:mb-6">
             The LOS Suite for You
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto">
             Choose your level of automation — from AI-assisted to fully autonomous.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-start">
           {/* Feature List */}
           <div className="space-y-4">
             {losFeatures.map((feature) => {
@@ -172,8 +172,6 @@ const LOSSuite = () => {
                         </div>
                       </div>
                     )}
-                    
-
                   </div>
                 </div>
               </div>
