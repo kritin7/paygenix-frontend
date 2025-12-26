@@ -6,9 +6,9 @@ const TrustBar = () => {
   if (!trustLogos || trustLogos.length === 0) return null;
 
   return (
-    <section className="py-16 bg-white border-y border-slate-100 overflow-hidden">
+    <section className="py-10 bg-white border-y border-slate-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <p className="text-center text-xs font-semibold text-slate-500 uppercase tracking-[0.2em] mb-12">
+        <p className="text-center text-xs font-semibold text-slate-500 uppercase tracking-[0.2em] mb-8">
           Our DNA — Built by Leaders from
         </p>
         
