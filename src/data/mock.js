@@ -12,8 +12,7 @@ export const trustLogos = [
 export const navLinks = [
   { label: 'Features', href: '#features' },
   { label: 'LOS Suite', href: '#los-suite' },
-  { label: 'Team', href: '#team' },
-  { label: 'Blog', href: '#blog' }
+  { label: 'Team', href: '#team' }
 ];
 
 
