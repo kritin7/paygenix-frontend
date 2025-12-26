@@ -52,11 +52,11 @@ const HeroSection = () => {
             <div className="flex items-center gap-6 pt-2 text-sm text-slate-500">
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500" />
-                No credit card required
+                No manual invervention required
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500" />
-                Setup in minutes
+                Setup in 1 week
               </span>
             </div>
           </div>
