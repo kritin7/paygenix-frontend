@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2, Clock, FileCheck } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen pt-32 pb-20 overflow-hidden bg-gradient-to-b from-slate-50 to-white">
+    <section className="relative pt-28 pb-12 lg:pt-32 lg:pb-16 overflow-hidden bg-gradient-to-b from-slate-50 to-white">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-10 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl" />
@@ -12,15 +12,15 @@ const HeroSection = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-6 lg:space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 text-teal-700 rounded-full text-sm font-medium">
               <span className="w-2 h-2 bg-teal-500 rounded-full animate-pulse" />
               Now Live: Credit Underwriter 2.0
             </div>
 
-            <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 leading-tight">
               Paygenix AI: The{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-teal-600">
                 Agentic Underwriting
@@ -28,7 +28,7 @@ const HeroSection = () => {
               Platform.
             </h1>
 
-            <p className="text-xl text-slate-600 leading-relaxed max-w-xl">
+            <p className="text-lg lg:text-xl text-slate-600 leading-relaxed max-w-xl">
               Supercharge your firm's output with an integrated toolset that automates the manual touchpoints of MSME credit underwriting.
             </p>
 
@@ -49,7 +49,7 @@ const HeroSection = () => {
               </Button>
             </div>
 
-            <div className="flex items-center gap-6 pt-4 text-sm text-slate-500">
+            <div className="flex items-center gap-6 pt-2 text-sm text-slate-500">
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-teal-500" />
                 No credit card required
