@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-slate-900">
       {/* CTA Section */}
-      <div className="py-24 relative overflow-hidden">
+      <div className="py-16 lg:py-20 relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl" />
@@ -14,10 +14,10 @@ const Footer = () => {
         </div>
 
         <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6">
             See Paygenix AI in Action
           </h2>
-          <p className="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-slate-400 mb-8 lg:mb-10 max-w-2xl mx-auto">
             Address Bharat's 30 Lakh Crore Credit Gap. Transform your underwriting today.
           </p>
           <Button 
