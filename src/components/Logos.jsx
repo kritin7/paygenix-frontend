@@ -48,13 +48,14 @@ export const BarclaysLogo = ({ className }) => (
   </svg>
 );
 
-// 3. IITB (IIT Bombay) - Complete Re-Verified High-Detail Version
+// 3. IITB (IIT Bombay) - Final Corrected High-Detail Version
 export const IITBLogo = ({ className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    // Expanded height from 463 to 550 to ensure text isn't cut off
-    viewBox="0 0 475 550"
-    className={className}
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    // The secret fix: The viewBox must start where the paths are (x=1964, y=523)
+    // We expand the height to 340 to leave room for the text at the bottom
+    viewBox="1964.8 523 255.3 340" 
+    className={`${className} text-slate-400 group-hover:text-[#004f9f] transition-all duration-500`}
     fill="currentColor"
     xmlSpace="preserve"
   >
@@ -79,15 +80,6 @@ export const IITBLogo = ({ className }) => (
 
     {/* The IITB text - Mathematically centered horizontally 
         and positioned near the bottom of the expanded viewBox */}
-    <text
-      x="237.5"
-      y="535"
-      textAnchor="middle"
-      fontSize="48"
-      fontWeight="900"
-      style={{ fontFamily: 'sans-serif', letterSpacing: '4px' }}
-      fill="currentColor"
-    >
       IITB
     </text>
   </svg>
