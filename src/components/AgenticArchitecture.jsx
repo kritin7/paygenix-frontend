@@ -3,7 +3,7 @@ import { Network, FileSearch, Shield, Brain, ArrowRight } from 'lucide-react';
 
 const AgenticArchitecture = () => {
   return (
-    <section className="py-24 bg-slate-900 relative overflow-hidden">
+    <section className="py-16 lg:py-20 bg-slate-900 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl" />
@@ -11,17 +11,17 @@ const AgenticArchitecture = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 lg:mb-16">
           <span className="inline-block px-4 py-2 bg-teal-500/10 text-teal-400 rounded-full text-sm font-semibold mb-4 border border-teal-500/20">
             Advanced Analysis & Risk Segmentation
           </span>
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6">
             State-of-the-Art{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">
               Agentic Reasoning
             </span>
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-slate-400 max-w-2xl mx-auto">
             Our agents "debate" to deliver fast, precise decisions that are 100% auditable.
           </p>
         </div>
