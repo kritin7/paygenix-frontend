@@ -1,5 +1,3 @@
-// frontend/src/components/Team.jsx
-
 import React from 'react';
 import { teamMembers } from '../data/mock';
 import { Linkedin } from 'lucide-react';
@@ -20,26 +18,26 @@ const Team = () => {
   };
 
   return (
-    <section id="team" className="py-24 bg-slate-50">
+    <section id="team" className="py-16 lg:py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 lg:mb-16">
           <span className="inline-block px-4 py-2 bg-teal-100 text-teal-700 rounded-full text-sm font-semibold mb-4">
             Our Team
           </span>
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-900 mb-4 lg:mb-6">
             Built by BFSI Experts
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto">
             Deep expertise in Credit Risk, Data Science, and Investment Banking.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-4xl mx-auto">
           {teamMembers.map((member, index) => (
             <div
               key={member.id}
-              className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 text-center"
+              className="group bg-white rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 text-center"
             >
               {/* Avatar Container */}
               <div className="relative w-28 h-28 mx-auto mb-6">
