@@ -48,56 +48,30 @@ export const BarclaysLogo = ({ className }) => (
   </svg>
 );
 
-// 3. IITB (IIT Bombay) - Simplified for TrustBar
+// 3. IITB - Text-First Version
 export const IITBLogo = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    // AGGRESSIVE crop: Focus only on the crest circle + text area
-    viewBox="100 80 280 100"
+    viewBox="0 0 200 60"
     className={className}
     fill="currentColor"
-    xmlSpace="preserve"
   >
-    {/* Simplified Crest Outline - Remove fine internal details */}
-    <g fill="currentColor">
-      <path d="M237.5 85c-30.4 0-55 24.6-55 55s24.6 55 55 55 55-24.6 55-55-24.6-55-55-55zm0 100c-24.9 0-45-20.1-45-45s20.1-45 45-45 45 20.1 45 45-20.1 45-45 45z" />
-      
-      {/* Simplified Inner Gear Pattern */}
-      <path d="M237.5 100c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm0 70c-16.6 0-30-13.4-30-30s13.4-30 30-30 30 13.4 30 30-13.4 30-30 30z" opacity="0.5" />
-      
-      {/* Stylized IIT Elements - Keep it minimal */}
-      <circle cx="237.5" cy="115" r="3" fill="#FFFFFF" />
-      <circle cx="237.5" cy="165" r="3" fill="#FFFFFF" />
-      <circle cx="212.5" cy="140" r="3" fill="#FFFFFF" />
-      <circle cx="262.5" cy="140" r="3" fill="#FFFFFF" />
-      
-      {/* Central Book/Lotus Icon - Simplified */}
-      <path d="M237.5 125v30m-10-15h20" stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round" />
-    </g>
-
-    {/* Large, Bold Text */}
+    {/* Small Crest Icon */}
+    <circle cx="20" cy="30" r="18" fill="none" stroke="currentColor" strokeWidth="2" />
+    <circle cx="20" cy="30" r="12" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.5" />
+    <path d="M20 20v20m-8-10h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    
+    {/* Dominant Text */}
     <text
-      x="285"
-      y="145"
+      x="50"
+      y="40"
       textAnchor="start"
-      fontSize="48"
+      fontSize="32"
       fontWeight="900"
       style={{ fontFamily: 'sans-serif', letterSpacing: '2px' }}
       fill="currentColor"
     >
-      IIT
-    </text>
-    <text
-      x="285"
-      y="170"
-      textAnchor="start"
-      fontSize="32"
-      fontWeight="700"
-      style={{ fontFamily: 'sans-serif', letterSpacing: '1px' }}
-      fill="currentColor"
-      opacity="0.7"
-    >
-      Bombay
+      IIT BOMBAY
     </text>
   </svg>
 );
