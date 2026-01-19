@@ -11,6 +11,20 @@ import AgenticArchitecture from "./components/AgenticArchitecture";
 import ComparisonTable from "./components/ComparisonTable";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
+// ... other imports
+import BSADemoGate from './components/BSADemoGate';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HeroSection />} />
+        <Route path="/demo-bsa" element={<BSADemoGate />} />
+        {/* ... other routes */}
+      </Routes>
+    </Router>
+  );
+}
 
 const LandingPage = () => {
   return (
