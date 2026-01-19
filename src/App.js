@@ -1,8 +1,9 @@
 import React from "react";
-// Correct way to import a DEFAULT export
-import TrustBar from './components/TrustBar';
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+
+// Existing Component Imports
+import TrustBar from './components/TrustBar';
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import AISuperPowers from "./components/AISuperPowers";
@@ -11,20 +12,9 @@ import AgenticArchitecture from "./components/AgenticArchitecture";
 import ComparisonTable from "./components/ComparisonTable";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
-// ... other imports
-import BSADemoGate from './components/BSADemoGate';
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HeroSection />} />
-        <Route path="/demo-bsa" element={<BSADemoGate />} />
-        {/* ... other routes */}
-      </Routes>
-    </Router>
-  );
-}
+// New Component Import
+import BSADemoGate from './components/BSADemoGate';
 
 const LandingPage = () => {
   return (
@@ -49,7 +39,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+          {/* Main Site Route */}
           <Route path="/" element={<LandingPage />} />
+          
+          {/* Protected Demo Route */}
+          <Route path="/demo-bsa" element={<BSADemoGate />} />
         </Routes>
       </BrowserRouter>
     </div>
