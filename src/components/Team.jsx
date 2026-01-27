@@ -56,16 +56,19 @@ const Team = () => {
                       {getInitials(member.name)}
                     </div>
                   )}
+
                   {/* LinkedIn Badge */}
-                  
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="absolute -bottom-1 -right-1 w-8 h-8 bg-slate-900 hover:bg-teal-500 rounded-full flex items-center justify-center transition-colors duration-300 shadow-lg"
-                    aria-label={`${member.name}'s LinkedIn profile`}
-                  >
-                    <Linkedin className="w-4 h-4 text-white" />
-                  </a>
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute -bottom-1 -right-1 w-8 h-8 bg-slate-900 hover:bg-teal-500 rounded-full flex items-center justify-center transition-colors duration-300 shadow-lg"
+                      aria-label={`${member.name}'s LinkedIn profile`}
+                    >
+                      <Linkedin className="w-4 h-4 text-white" />
+                    </a>
+                  )}
                 </div>
 
                 {/* Member Info */}
