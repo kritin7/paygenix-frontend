@@ -34,63 +34,65 @@ const Team = () => {
         </div>
 
         {/* Single team member centered */}
-        <div className="flex justify-center max-w-md mx-auto">
-          {teamMembers.map((member, index) => (
-            <div
-              key={member.id}
-              className="group bg-white rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 text-center w-full"
-            >
-              {/* Avatar Container */}
-              <div className="relative w-28 h-28 mx-auto mb-6">
-                {member.image ? (
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full rounded-full object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
-                  />
-                ) : (
-                  <div
-                    className={`w-full h-full rounded-full bg-gradient-to-br ${getGradient(index)} flex items-center justify-center text-white text-2xl font-bold shadow-lg group-hover:scale-105 transition-transform duration-300`}
+        <div className="flex justify-center">
+          <div className="max-w-md w-full">
+            {teamMembers.map((member, index) => (
+              <div
+                key={member.id}
+                className="group bg-white rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 text-center"
+              >
+                {/* Avatar Container */}
+                <div className="relative w-28 h-28 mx-auto mb-6">
+                  {member.image ? (
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full rounded-full object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <div
+                      className={`w-full h-full rounded-full bg-gradient-to-br ${getGradient(index)} flex items-center justify-center text-white text-2xl font-bold shadow-lg group-hover:scale-105 transition-transform duration-300`}
+                    >
+                      {getInitials(member.name)}
+                    </div>
+                  )}
+                  {/* LinkedIn Badge */}
+                  
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute -bottom-1 -right-1 w-8 h-8 bg-slate-900 hover:bg-teal-500 rounded-full flex items-center justify-center transition-colors duration-300 shadow-lg"
+                    aria-label={`${member.name}'s LinkedIn profile`}
                   >
-                    {getInitials(member.name)}
-                  </div>
-                )}
-                {/* LinkedIn Badge */}
-                
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute -bottom-1 -right-1 w-8 h-8 bg-slate-900 hover:bg-teal-500 rounded-full flex items-center justify-center transition-colors duration-300 shadow-lg"
-                  aria-label={`${member.name}'s LinkedIn profile`}
-                >
-                  <Linkedin className="w-4 h-4 text-white" />
-                </a>
-              </div>
+                    <Linkedin className="w-4 h-4 text-white" />
+                  </a>
+                </div>
 
-              {/* Member Info */}
-              <h3 className="text-xl font-bold text-slate-900 mb-1">
-                {member.name}
-              </h3>
-              <p className="text-teal-600 font-semibold mb-3">
-                {member.role}
-              </p>
-              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
-                {member.bio}
-              </p>
+                {/* Member Info */}
+                <h3 className="text-xl font-bold text-slate-900 mb-1">
+                  {member.name}
+                </h3>
+                <p className="text-teal-600 font-semibold mb-3">
+                  {member.role}
+                </p>
+                <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+                  {member.bio}
+                </p>
 
-              {/* Institution Badges */}
-              <div className="flex flex-wrap items-center justify-center gap-2">
-                {member.institutions.map((institution, idx) => (
-                  <span
-                    key={idx}
-                    className="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full"
-                  >
-                    {institution}
-                  </span>
-                ))}
+                {/* Institution Badges */}
+                <div className="flex flex-wrap items-center justify-center gap-2">
+                  {member.institutions.map((institution, idx) => (
+                    <span
+                      key={idx}
+                      className="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full"
+                    >
+                      {institution}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
