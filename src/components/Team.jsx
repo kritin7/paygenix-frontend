@@ -33,11 +33,12 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-4xl mx-auto">
+        {/* Single team member centered */}
+        <div className="flex justify-center max-w-md mx-auto">
           {teamMembers.map((member, index) => (
             <div
               key={member.id}
-              className="group bg-white rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 text-center"
+              className="group bg-white rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 text-center w-full"
             >
               {/* Avatar Container */}
               <div className="relative w-28 h-28 mx-auto mb-6">
@@ -54,13 +55,13 @@ const Team = () => {
                     {getInitials(member.name)}
                   </div>
                 )}
-
                 {/* LinkedIn Badge */}
-                <a
+                
                   href={member.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="absolute -bottom-1 -right-1 w-8 h-8 bg-slate-900 hover:bg-teal-500 rounded-full flex items-center justify-center transition-colors duration-300 shadow-lg"
+                  aria-label={`${member.name}'s LinkedIn profile`}
                 >
                   <Linkedin className="w-4 h-4 text-white" />
                 </a>
@@ -70,11 +71,9 @@ const Team = () => {
               <h3 className="text-xl font-bold text-slate-900 mb-1">
                 {member.name}
               </h3>
-
               <p className="text-teal-600 font-semibold mb-3">
                 {member.role}
               </p>
-
               <p className="text-slate-600 text-sm mb-4 leading-relaxed">
                 {member.bio}
               </p>
