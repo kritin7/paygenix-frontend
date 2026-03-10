@@ -150,7 +150,7 @@ const Team = () => {
                     className="w-full h-full rounded-full object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
                   />
                 ) : (
-                  <div className={"w-full h-full rounded-full bg-gradient-to-br " + getGradient(index) + " flex items-center justify-center text-white text-2xl font-bold shadow-lg group-hover:scale-105 transition-transform duration-300"}>
+                  <div className={"w-full h-full rounded-full bg-gradient-to-br " + getGradient(index) + " flex items-center justify-center text-white text-2xl font-bold shadow-lg"}>
                     {getInitials(member.name)}
                   </div>
                 )}
@@ -160,7 +160,7 @@ const Team = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="absolute -bottom-1 -right-1 w-8 h-8 bg-slate-900 hover:bg-teal-500 rounded-full flex items-center justify-center transition-colors duration-300 shadow-lg"
-                    aria-label={member.name + "'s LinkedIn profile"}
+                    aria-label={member.name + " LinkedIn"}
                   >
                     <Linkedin className="w-4 h-4 text-white" />
                   </a>
