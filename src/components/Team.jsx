@@ -116,7 +116,7 @@ const Team = () => {
     const gradients = [
       'from-teal-400 to-teal-600',
       'from-cyan-400 to-cyan-600',
-      'from-emerald-400 to-emerald-600'
+      'from-emerald-400 to-emerald-600',
     ];
     return gradients[index % gradients.length];
   };
@@ -124,7 +124,6 @@ const Team = () => {
   return (
     <section id="team" className="py-16 lg:py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           <span className="inline-block px-4 py-2 bg-teal-100 text-teal-700 rounded-full text-sm font-semibold mb-4">
             Our Team
@@ -137,14 +136,12 @@ const Team = () => {
           </p>
         </div>
 
-        {/* Team grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-3xl mx-auto">
           {teamMembers.map((member, index) => (
             <div
               key={member.id}
               className="group bg-white rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 text-center"
             >
-              {/* Avatar */}
               <div className="relative w-28 h-28 mx-auto mb-6">
                 {member.image ? (
                   <img
@@ -153,9 +150,7 @@ const Team = () => {
                     className="w-full h-full rounded-full object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
                   />
                 ) : (
-                  <div
-                    className={`w-full h-full rounded-full bg-gradient-to-br ${getGradient(index)} flex items-center justify-center text-white text-2xl font-bold shadow-lg group-hover:scale-105 transition-transform duration-300`}
-                  >
+                  <div className={"w-full h-full rounded-full bg-gradient-to-br " + getGradient(index) + " flex items-center justify-center text-white text-2xl font-bold shadow-lg group-hover:scale-105 transition-transform duration-300"}>
                     {getInitials(member.name)}
                   </div>
                 )}
@@ -165,19 +160,17 @@ const Team = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="absolute -bottom-1 -right-1 w-8 h-8 bg-slate-900 hover:bg-teal-500 rounded-full flex items-center justify-center transition-colors duration-300 shadow-lg"
-                    aria-label={`${member.name}'s LinkedIn profile`}
+                    aria-label={member.name + "'s LinkedIn profile"}
                   >
                     <Linkedin className="w-4 h-4 text-white" />
                   </a>
                 )}
               </div>
 
-              {/* Info */}
               <h3 className="text-xl font-bold text-slate-900 mb-1">{member.name}</h3>
               <p className="text-teal-600 font-semibold mb-3">{member.role}</p>
               <p className="text-slate-600 text-sm mb-4 leading-relaxed">{member.bio}</p>
 
-              {/* Badges */}
               <div className="flex flex-wrap items-center justify-center gap-2">
                 {member.institutions.map((institution, idx) => (
                   <span
