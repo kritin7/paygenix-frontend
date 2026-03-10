@@ -3,7 +3,8 @@ import { teamMembers } from '../data/mock';
 import { Linkedin } from 'lucide-react';
 
 const Team = () => {
-  const getInitials = (name) => name.split(' ').map(n => n[0]).join('');
+  const getInitials = (name) => 
+    name ? name.split(' ').map(n => n[0]).join('').toUpperCase() : '??';
 
   const getGradient = (index) => {
     const gradients = [
@@ -43,17 +44,18 @@ const Team = () => {
                     className="w-full h-full rounded-full object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
                   />
                 ) : (
-                  <div className={"w-full h-full rounded-full bg-gradient-to-br " + getGradient(index) + " flex items-center justify-center text-white text-2xl font-bold shadow-lg"}>
+                  <div className={`w-full h-full rounded-full bg-gradient-to-br ${getGradient(index)} flex items-center justify-center text-white text-2xl font-bold shadow-lg`}>
                     {getInitials(member.name)}
                   </div>
                 )}
+                
                 {member.linkedin && (
-                  
+                  <a
                     href={member.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="absolute -bottom-1 -right-1 w-8 h-8 bg-slate-900 hover:bg-teal-500 rounded-full flex items-center justify-center transition-colors duration-300 shadow-lg"
-                    aria-label={member.name + " LinkedIn"}
+                    aria-label={`${member.name} LinkedIn`}
                   >
                     <Linkedin className="w-4 h-4 text-white" />
                   </a>
@@ -65,9 +67,9 @@ const Team = () => {
               <p className="text-slate-600 text-sm mb-4 leading-relaxed">{member.bio}</p>
 
               <div className="flex flex-wrap items-center justify-center gap-2">
-                {member.institutions.map((institution, idx) => (
+                {member.institutions?.map((institution, idx) => (
                   <span
-                    key={idx}
+                    key={`${member.id}-inst-${idx}`}
                     className="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-medium rounded-full"
                   >
                     {institution}
