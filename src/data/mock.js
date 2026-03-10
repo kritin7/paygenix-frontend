@@ -91,5 +91,14 @@ export const teamMembers = [
     institutions: ['Piramal', 'IITB'],
     image: '/kritin.jpeg',
     linkedin: 'https://www.linkedin.com/in/kritin-agarwal-342306156/'
+  },
+  {
+    id: 2,
+    name: 'Yuvraj Yadav',
+    role: 'CTO',
+    bio: 'Senior Data Scientist at Piramal Finance, IITD.',
+    institutions: ['Piramal', 'IITD'],
+    image: '/yuvraj.jpeg',
+    linkedin: 'https://www.linkedin.com/in/yuvraj-yadav-256b891b4/'
   }
 ];
