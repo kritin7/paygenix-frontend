@@ -11,7 +11,7 @@ const ComparisonTable = () => {
             Competitive Advantage
           </span>
           <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-900 mb-4 lg:mb-6">
-            Why Choose Paygenix AI?
+            Why Choose PayGenix AI?
           </h2>
           <p className="text-lg lg:text-xl text-slate-600 max-w-2xl mx-auto">
             See how our agentic approach outperforms traditional methods.
@@ -30,7 +30,7 @@ const ComparisonTable = () => {
                 <span className="text-sm font-semibold text-slate-400 uppercase tracking-wider">Traditional AI / Manual</span>
               </div>
               <div className="p-6 text-center bg-teal-50">
-                <span className="text-sm font-semibold text-teal-700 uppercase tracking-wider">Paygenix Agentic AI</span>
+                <span className="text-sm font-semibold text-teal-700 uppercase tracking-wider">PayGenix Agentic AI</span>
               </div>
             </div>
 
@@ -54,7 +54,7 @@ const ComparisonTable = () => {
                 <div className="p-6 flex items-center justify-center text-center bg-teal-50/50">
                   <div className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-teal-500 flex-shrink-0" />
-                    <span className="text-slate-700 font-medium text-sm">{row.paygenix}</span>
+                    <span className="text-slate-700 font-medium text-sm">{row.PayGenix}</span>
                   </div>
                 </div>
               </div>
