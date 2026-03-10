@@ -105,15 +105,12 @@
 // export default Team;
 
 
-
 import React from 'react';
 import { teamMembers } from '../data/mock';
 import { Linkedin } from 'lucide-react';
 
 const Team = () => {
-  const getInitials = (name) => {
-    return name.split(' ').map(n => n[0]).join('');
-  };
+  const getInitials = (name) => name.split(' ').map(n => n[0]).join('');
 
   const getGradient = (index) => {
     const gradients = [
@@ -123,19 +120,6 @@ const Team = () => {
     ];
     return gradients[index % gradients.length];
   };
-
-  // Additional member to display alongside teamMembers
-  const yuvraj = {
-    id: 'yuvraj',
-    name: 'Yuvraj Yadav',
-    role: 'CTO',
-    bio: 'Senior Data Scientist at Piramal Finance, IITD.',
-    institutions: ['Piramal', 'IITD'],
-    linkedin: 'https://www.linkedin.com/in/yuvraj-yadav-256b891b4/',
-    image: '/assets/yuvraj.jpeg', // update path as needed
-  };
-
-  const allMembers = [...teamMembers, yuvraj];
 
   return (
     <section id="team" className="py-16 lg:py-20 bg-slate-50">
@@ -153,14 +137,14 @@ const Team = () => {
           </p>
         </div>
 
-        {/* Team grid — 1 col on mobile, 2 cols on md+ */}
+        {/* Team grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-3xl mx-auto">
-          {allMembers.map((member, index) => (
+          {teamMembers.map((member, index) => (
             <div
               key={member.id}
               className="group bg-white rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-slate-100 text-center"
             >
-              {/* Avatar Container */}
+              {/* Avatar */}
               <div className="relative w-28 h-28 mx-auto mb-6">
                 {member.image ? (
                   <img
@@ -175,7 +159,6 @@ const Team = () => {
                     {getInitials(member.name)}
                   </div>
                 )}
-                {/* LinkedIn Badge */}
                 {member.linkedin && (
                   
                     href={member.linkedin}
@@ -189,18 +172,12 @@ const Team = () => {
                 )}
               </div>
 
-              {/* Member Info */}
-              <h3 className="text-xl font-bold text-slate-900 mb-1">
-                {member.name}
-              </h3>
-              <p className="text-teal-600 font-semibold mb-3">
-                {member.role}
-              </p>
-              <p className="text-slate-600 text-sm mb-4 leading-relaxed">
-                {member.bio}
-              </p>
+              {/* Info */}
+              <h3 className="text-xl font-bold text-slate-900 mb-1">{member.name}</h3>
+              <p className="text-teal-600 font-semibold mb-3">{member.role}</p>
+              <p className="text-slate-600 text-sm mb-4 leading-relaxed">{member.bio}</p>
 
-              {/* Institution Badges */}
+              {/* Badges */}
               <div className="flex flex-wrap items-center justify-center gap-2">
                 {member.institutions.map((institution, idx) => (
                   <span
