@@ -21,7 +21,7 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 leading-tight">
-              Paygenix AI: The{' '}
+              PayGenix AI: The{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-teal-600">
                 Agentic Underwriting
               </span>{' '}
