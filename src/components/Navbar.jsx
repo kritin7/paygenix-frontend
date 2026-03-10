@@ -42,7 +42,7 @@ const Navbar = () => {
               </svg>
             </div>
             <span className="text-xl font-bold text-slate-900">
-              Paygenix <span className="text-teal-500">AI</span>
+              PayGenix <span className="text-teal-500">AI</span>
             </span>
           </a>
 
