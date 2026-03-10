@@ -1,4 +1,4 @@
-// Mock data for Paygenix AI Landing Page
+// Mock data for PayGenix AI Landing Page
 import { PiramalLogo, BarclaysLogo, IITBLogo, IITDLogo, IIMBLogo } from '../components/Logos';
 
 export const trustLogos = [
@@ -63,22 +63,22 @@ export const comparisonData = [
   {
     feature: 'Methodology',
     traditional: 'Black-Box / Subjective',
-    paygenix: 'Agentic Reasoning (Consensus)'
+    PayGenix: 'Agentic Reasoning (Consensus)'
   },
   {
     feature: 'Explainability',
     traditional: 'Opaque / "Computer says No"',
-    paygenix: 'Audit-Ready Chain-of-Thought (CoT)'
+    PayGenix: 'Audit-Ready Chain-of-Thought (CoT)'
   },
   {
     feature: 'TAT',
     traditional: '4-5 Days',
-    paygenix: '< 4 Minutes'
+    PayGenix: '< 4 Minutes'
   },
   {
     feature: 'Risk Detection',
     traditional: 'Generic Risk Rules',
-    paygenix: 'Sub-Industry Intelligence'
+    PayGenix: 'Sub-Industry Intelligence'
   }
 ];
 
