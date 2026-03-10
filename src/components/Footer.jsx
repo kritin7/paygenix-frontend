@@ -15,7 +15,7 @@ const Footer = () => {
 
         <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 lg:mb-6">
-            See Paygenix AI in Action
+            See PayGenix AI in Action
           </h2>
           <p className="text-lg lg:text-xl text-slate-400 mb-8 lg:mb-10 max-w-2xl mx-auto">
             Address Bharat's 30 Lakh Crore Credit Gap. Transform your underwriting today.
@@ -58,7 +58,7 @@ const Footer = () => {
                   </svg>
                 </div>
                 <span className="text-xl font-bold text-white">
-                  Paygenix <span className="text-teal-400">AI</span>
+                  PayGenix <span className="text-teal-400">AI</span>
                 </span>
               </a>
               <p className="text-slate-400 text-sm mb-4">
@@ -66,11 +66,11 @@ const Footer = () => {
               </p>
               <div className="flex items-center gap-3">
                 <a
-                  href="https://linkedin.com/company/paygenix-ai"
+                  href="https://linkedin.com/company/PayGenix-ai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-slate-800 hover:bg-teal-500 rounded-lg flex items-center justify-center transition-colors"
-                  aria-label="Visit Paygenix AI on LinkedIn"
+                  aria-label="Visit PayGenix AI on LinkedIn"
                 >
                   <svg className="w-5 h-5 text-slate-400 hover:text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
@@ -103,10 +103,10 @@ const Footer = () => {
                 <li className="flex items-center gap-3 text-slate-400 text-sm">
                   <Mail className="w-4 h-4 text-teal-500" />
                   <a 
-                    href="mailto:kritin.agarwal@paygenixai.com"
+                    href="mailto:kritin.agarwal@PayGenixai.com"
                     className="hover:text-white transition-colors"
                   >
-                    kritin.agarwal@paygenixai.com
+                    kritin.agarwal@PayGenixai.com
                   </a>
                 </li>
                 <li className="flex items-center gap-3 text-slate-400 text-sm">
@@ -129,7 +129,7 @@ const Footer = () => {
           {/* Bottom Bar */}
           <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-center gap-4">
             <p className="text-slate-500 text-sm">
-              © 2025 Paygenix AI. All rights reserved.
+              © 2025 PayGenix AI. All rights reserved.
             </p>
           </div>
         </div>
