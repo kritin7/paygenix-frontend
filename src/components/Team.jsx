@@ -30,7 +30,7 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-3xl mx-auto">
+        <div className={`grid gap-6 lg:gap-8 mx-auto ${teamMembers.length === 1 ? 'grid-cols-1 max-w-sm' : 'grid-cols-1 md:grid-cols-2 max-w-3xl'}`}>
           {teamMembers.map((member, index) => (
             <div
               key={member.id}
